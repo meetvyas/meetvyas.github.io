@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Meet Vyas | WordPress Developer | MK Consultant IND</title>
+<meta charset="UTF-8" />
+<title>Meet Vyas | WordPress Developer | MK Consultant IND</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="Meet Vyas is a WordPress Frontend & Backend Developer with 13+ years experience, providing freelance and project-based resources via MK Consultant IND." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description"
+content="Meet Vyas – WordPress Frontend & Backend Developer with 13+ years experience. Freelance & project-based resources from MK Consultant IND." />
 
-  <meta name="keywords"
-        content="Meet Vyas, WordPress Developer, WooCommerce Expert, Freelance Developer India, MK Consultant IND" />
+<meta name="keywords"
+content="Meet Vyas, WordPress Developer, WooCommerce Expert, Freelance Developer India, MK Consultant IND" />
 
- <link rel="stylesheet" href="style.css" />
-</head> 
+<link rel="stylesheet" href="style.css" />
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
 
 <body>
 
 <header class="hero">
-  <h1>Meet Vyas</h1>
-  <h2>WordPress Frontend & Backend Developer</h2>
-  <p>13+ Years Experience | Freelance & Project-Based Resources</p>
+  <div>
+    <h1 data-aos="fade-down">Meet Vyas</h1>
+    <h2 data-aos="fade-up">WordPress Frontend & Backend Developer</h2>
+    <p data-aos="fade-up">
+      13+ Years Experience • Freelance & Project-Based Resources
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="resume.pdf" class="btn outline" download>Download Resume</a>
+      <button onclick="toggleDark()" class="btn dark-toggle">🌙</button>
+    </div>
+  </div>
 </header>
 
-<section class="section about">
+<section class="section about" data-aos="fade-up">
   <h3>About Me</h3>
   <p>
-    I am a <strong>WordPress Developer</strong> with over <strong>13+ years of experience</strong>
-    in frontend and backend development. I am comfortable working with
-    all page builders, custom HTML, Bootstrap, SEO implementation,
-    and scalable WordPress solutions.
+    I am a <strong>WordPress Developer</strong> with <strong>13+ years of experience</strong>
+    in frontend and backend development.
+    I work comfortably with all page builders, custom HTML, Bootstrap,
+    SEO implementation, and scalable WordPress solutions.
   </p>
 </section>
 
-<section class="section skills">
+<section class="section skills" data-aos="fade-up">
   <h3>Technical Skills</h3>
   <ul>
     <li>HTML, CSS, SCSS, JavaScript</li>
     <li>React.js, Next.js, React Bootstrap</li>
     <li>Bootstrap, jQuery</li>
     <li>WordPress (ACF, Page Builders, WooCommerce)</li>
-    <li>SEO Implementation & Performance Optimization</li>
+    <li>SEO & Performance Optimization</li>
   </ul>
 </section>
 
-<section class="section work">
-  <h3>Work Model</h3>
-  <p>
-    I work as a <strong>Freelance Resource</strong> or
-    <strong>Project-Based Resource</strong> for companies.
-  </p>
-  <ul>
-    <li>Hourly-based development</li>
-    <li>Project-based engagement</li>
-    <li>Long-term dedicated resource</li>
-  </ul>
+<section id="projects" class="section projects">
+  <h3 data-aos="fade-up">Projects / Work</h3>
+
+  <div class="project-grid">
+    <div class="project-card" data-aos="zoom-in">
+      <h4>Khushiya Gifts</h4>
+      <p>Corporate & festive gifting website built using WordPress + WooCommerce.</p>
+      <span>WordPress • WooCommerce • SEO</span>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <h4>Static Product Catalog</h4>
+      <p>SEO-friendly HTML catalog with category-based navigation.</p>
+      <span>HTML • CSS • JavaScript</span>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <h4>Corporate Websites</h4>
+      <p>Multiple corporate & business websites with custom UI.</p>
+      <span>WordPress • ACF • Page Builders</span>
+    </div>
+  </div>
 </section>
 
-<section class="section company">
+<section class="section company" data-aos="fade-up">
   <h3>Company</h3>
   <p><strong>MK Consultant IND</strong></p>
   <p>
@@ -64,20 +88,31 @@
       www.mkconsultantind.com
     </a>
   </p>
+  <p>
+    Providing skilled resources on hourly & project basis.
+  </p>
 </section>
 
-<section class="section contact">
+<section class="section contact" data-aos="fade-up">
   <h3>Contact</h3>
-  <p>🌐 Company Website: https://www.mkconsultantind.com</p>
-<p>💼 GitHub: https://github.com/meetvyas/</p>
-<p>✉️ Email: info@mkconsultantind.com</p>
-<p>✉️ Email: meet.vyas7750@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/meetvyas" target="_blank">github.com/meetvyas</a></p>
+  <p>Email: your-email@example.com</p>
+  <p>
+    GitHub: <a href="https://github.com/meetvyas" target="_blank">github.com/meetvyas</a>
+  </p>
 </section>
 
 <footer class="footer">
-  © 2025 Meet Vyas | WordPress Developer | MK Consultant IND
+  © 2025 Meet Vyas | MK Consultant IND
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+
+function toggleDark(){
+  document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
