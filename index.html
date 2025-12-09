@@ -1,118 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Meet Vyas | WordPress Developer | MK Consultant IND</title>
+  <meta charset="UTF-8">
+  <title>Meet Vyas | WordPress Developer | MK Consultant IND</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description"
-content="Meet Vyas – WordPress Frontend & Backend Developer with 13+ years experience. Freelance & project-based resources from MK Consultant IND." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Meet Vyas is a WordPress Frontend & Backend Developer with 13+ years experience. Freelance & project-based resources at MK Consultant IND.">
 
-<meta name="keywords"
-content="Meet Vyas, WordPress Developer, WooCommerce Expert, Freelance Developer India, MK Consultant IND" />
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css" />
-
-<!-- AOS Animation -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="hero">
-  <div>
+  <div class="hero-inner">
     <h1 data-aos="fade-down">Meet Vyas</h1>
-    <h2 data-aos="fade-up">WordPress Frontend & Backend Developer</h2>
-    <p data-aos="fade-up">
-      13+ Years Experience • Freelance & Project-Based Resources
+    <p class="tagline" data-aos="fade-up">
+      WordPress Frontend & Backend Developer
+    </p>
+    <p class="sub" data-aos="fade-up">
+      13+ Years Experience • Freelance & Project Resource
     </p>
 
-    <div class="buttons">
-      <a href="#projects" class="btn">View Projects</a>
+    <div class="hero-actions">
+      <a href="#projects" class="btn">Projects</a>
       <a href="resume.pdf" class="btn outline" download>Download Resume</a>
-      <button onclick="toggleDark()" class="btn dark-toggle">🌙</button>
+      <button class="btn moon" onclick="toggleTheme()">🌙</button>
     </div>
   </div>
 </header>
 
 <section class="section about" data-aos="fade-up">
-  <h3>About Me</h3>
+  <h2>About</h2>
   <p>
-    I am a <strong>WordPress Developer</strong> with <strong>13+ years of experience</strong>
-    in frontend and backend development.
-    I work comfortably with all page builders, custom HTML, Bootstrap,
-    SEO implementation, and scalable WordPress solutions.
+    I’m a <strong>WordPress Developer</strong> with over <strong>13 years of experience</strong>
+    building corporate websites, product catalogs, WooCommerce stores and
+    SEO-friendly applications.
   </p>
 </section>
 
-<section class="section skills" data-aos="fade-up">
-  <h3>Technical Skills</h3>
-  <ul>
-    <li>HTML, CSS, SCSS, JavaScript</li>
-    <li>React.js, Next.js, React Bootstrap</li>
-    <li>Bootstrap, jQuery</li>
-    <li>WordPress (ACF, Page Builders, WooCommerce)</li>
-    <li>SEO & Performance Optimization</li>
-  </ul>
+<section class="section skills">
+  <h2 data-aos="fade-up">Skills</h2>
+
+  <div class="card-grid">
+    <div class="card" data-aos="zoom-in">HTML / CSS / SCSS</div>
+    <div class="card" data-aos="zoom-in">JavaScript / jQuery</div>
+    <div class="card" data-aos="zoom-in">React.js / Next.js</div>
+    <div class="card" data-aos="zoom-in">Bootstrap / Responsive UI</div>
+    <div class="card" data-aos="zoom-in">WordPress / ACF</div>
+    <div class="card" data-aos="zoom-in">WooCommerce</div>
+    <div class="card" data-aos="zoom-in">SEO Optimization</div>
+  </div>
 </section>
 
 <section id="projects" class="section projects">
-  <h3 data-aos="fade-up">Projects / Work</h3>
+  <h2 data-aos="fade-up">Projects</h2>
 
   <div class="project-grid">
-    <div class="project-card" data-aos="zoom-in">
-      <h4>Khushiya Gifts</h4>
-      <p>Corporate & festive gifting website built using WordPress + WooCommerce.</p>
+    <div class="project" data-aos="fade-up">
+      <h3>Khushiya Gifts</h3>
+      <p>Corporate & festive gifting website built with WooCommerce.</p>
       <span>WordPress • WooCommerce • SEO</span>
     </div>
 
-    <div class="project-card" data-aos="zoom-in">
-      <h4>Static Product Catalog</h4>
-      <p>SEO-friendly HTML catalog with category-based navigation.</p>
+    <div class="project" data-aos="fade-up">
+      <h3>HTML Product Catalog</h3>
+      <p>SEO-friendly static catalog like GiftKyaDe.</p>
       <span>HTML • CSS • JavaScript</span>
     </div>
 
-    <div class="project-card" data-aos="zoom-in">
-      <h4>Corporate Websites</h4>
-      <p>Multiple corporate & business websites with custom UI.</p>
-      <span>WordPress • ACF • Page Builders</span>
+    <div class="project" data-aos="fade-up">
+      <h3>Corporate Websites</h3>
+      <p>Multiple business websites for agencies & enterprises.</p>
+      <span>WordPress • Page Builders</span>
     </div>
   </div>
 </section>
 
 <section class="section company" data-aos="fade-up">
-  <h3>Company</h3>
+  <h2>Company</h2>
   <p><strong>MK Consultant IND</strong></p>
   <p>
-    🌐 <a href="https://www.mkconsultantind.com" target="_blank">
+    <a href="https://www.mkconsultantind.com" target="_blank">
       www.mkconsultantind.com
     </a>
   </p>
-  <p>
-    Providing skilled resources on hourly & project basis.
-  </p>
-</section>
-
-<section class="section contact" data-aos="fade-up">
-  <h3>Contact</h3>
-  <p>Email: your-email@example.com</p>
-  <p>
-    GitHub: <a href="https://github.com/meetvyas" target="_blank">github.com/meetvyas</a>
-  </p>
+  <p>Providing skilled developers on hourly & project basis.</p>
 </section>
 
 <footer class="footer">
-  © 2025 Meet Vyas | MK Consultant IND
+  © 2025 Meet Vyas • MK Consultant IND
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({ duration: 900, once: true });
-
-function toggleDark(){
-  document.body.classList.toggle("dark");
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
