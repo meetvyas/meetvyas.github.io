@@ -108,3 +108,19 @@ body {
   text-align: center;
   opacity: 0.6;
 }
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 4px solid var(--accent);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
